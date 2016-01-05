@@ -12,7 +12,7 @@
 4. `docker-compose build`
 5. `docker-compose run web wagtail start [projectname]`
 6. Move the contents of the new [projectname] folder out into the root
-7. Change the database settings in [projectname]/settings/base.py to use `dj_database_url` [Link to example config](#)
+7. Change the database settings in [projectname]/settings/base.py to use `dj_database_url` [Link to example config](#dj_database_url-config)
 8. `docker-compose run web ./manage.py migrate`
 9. `docker-compose run web ./manage.py createsuperuser`
 10. `docker-compose up` and your Wagtail admin will be running at `http://192.168.99.100/admin` (if you use the default docker ip)
