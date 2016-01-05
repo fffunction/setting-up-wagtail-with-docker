@@ -32,6 +32,8 @@ ___
 ### dj_database_url config
 
 ```python
+import dj_database_url
+
 DATABASES = {
     'default': dj_database_url.config()
 }
