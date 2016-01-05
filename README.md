@@ -11,9 +11,10 @@
 3. In a command line, `cd` to your project folder.
 4. `docker-compose build`
 5. `docker-compose run web wagtail start [projectname]`
-6. `docker-compose run web ./manage.py migrate`
-7. `docker-compose run web ./manage.py createsuperuser`
-8. `docker-compose up` and your Wagtail admin will be running at `http://192.168.99.100/admin` (if you use the default docker ip)
+6. Move the contents of the new [projectname] folder out into the root
+7. `docker-compose run web ./manage.py migrate`
+8. `docker-compose run web ./manage.py createsuperuser`
+9. `docker-compose up` and your Wagtail admin will be running at `http://192.168.99.100/admin` (if you use the default docker ip)
 
 ## Config changes
 
