@@ -35,6 +35,7 @@ Required files:
  - Procfile (requires pointing to the correct wsgi file)
  - runtime.txt (requires setting to correct env)
  - bin/post_compile
+ - wsgi.py changes [Link to config](#wsgi.py-config)
 
 1. Add the dokku server to your remotes. `git remote add dokku dokku@server.com:[appname]`
 2. Push to dokku. `git push dokku [currentbranch]:master`
@@ -53,4 +54,16 @@ import dj_database_url
 DATABASES = {
     'default': dj_database_url.config()
 }
+```
+
+### wsgi.py config
+
+Add the following:
+
+```python
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+
+application = get_wsgi_application()
+application = DjangoWhiteNoise(application)
 ```
