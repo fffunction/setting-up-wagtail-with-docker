@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "-----> Running django-compressor"
+python manage.py compress --force
