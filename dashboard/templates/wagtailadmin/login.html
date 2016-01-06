@@ -1,0 +1,6 @@
+{% overextends "wagtailadmin/login.html" %}
+{% load staticfiles %}
+
+{% block branding_login %}
+    Sign in to <img src="{% static "path/to/logo.png" %}" alt="[project name]" style="width: 300px;display: inline-block;vertical-align: middle;" />
+{% endblock %}

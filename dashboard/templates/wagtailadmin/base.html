@@ -1,0 +1,6 @@
+{% overextends "wagtailadmin/base.html" %}
+{% load staticfiles %}
+
+{% block branding_logo %}
+    <img src="{% static "path/to/logo.png" %}" alt="{{ site_name }}" style="width:100%;" />
+{% endblock %}
