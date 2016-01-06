@@ -39,6 +39,7 @@ Required files:
 1. Add the dokku server to your remotes. `git remote add dokku dokku@server.com:[appname]`
 2. Push to dokku. `git push dokku [currentbranch]:master`
 3. On dokku configure the necessary plugins, e.g. `dokku postrgresql:create [appname]; dokku elasticsearch:create [appname]`
+4. Either import a database with pgAdmin or run the `migrate` and `createsuperuser` commands details above
 
 ___
 
