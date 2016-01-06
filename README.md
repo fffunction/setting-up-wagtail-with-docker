@@ -32,9 +32,9 @@
 
 Required files:
 
-- Procfile (requires pointing to the correct wsgi file)
-- runtime.txt (requires setting to correct env)
-- bin/post_compile
+ - Procfile (requires pointing to the correct wsgi file)
+ - runtime.txt (requires setting to correct env)
+ - bin/post_compile
 
 1. Add the dokku server to your remotes. `git remote add dokku dokku@server.com:[appname]`
 2. Push to dokku. `git push dokku [currentbranch]:master`
