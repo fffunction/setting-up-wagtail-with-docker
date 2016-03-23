@@ -58,9 +58,12 @@ DATABASES = {
 
 ### wsgi.py config
 
-Add the following:
+Replace with the following:
 
 ```python
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "[APPNAME].settings")
+
 from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 
