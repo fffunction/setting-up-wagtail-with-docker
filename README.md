@@ -24,10 +24,6 @@
 3. Point the image sources in these tempates to a logo and change `[project name]` to a suitable name.
 4. Add `'dashboard'` to the `INSTALLED_APPS` in `base.py` making sure `'overextends','dashboard',` comes before `'wagtail.wagtailadmin','wagtail.wagtailcore',`.
 
-## Config changes
-
-> ... Compressor problems with whitenoise on admin css?
-
 ## Set up for Dokku deployment
 
 Required files:
