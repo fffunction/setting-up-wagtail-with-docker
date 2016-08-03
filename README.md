@@ -2,6 +2,8 @@
 
 ## Prerequisites
 
+- [Docker for mac/Docker for windows](https://docs.docker.com/engine/installation/#/on-osx-and-windows)
+- or
 - [Docker Toolbox](https://www.docker.com/docker-toolbox)
 
 ## Getting Running
