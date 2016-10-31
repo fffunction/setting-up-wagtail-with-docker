@@ -17,6 +17,10 @@
 9. `docker-compose run web ./manage.py createsuperuser`
 10. `docker-compose up` and your Wagtail admin will be running at `http://localhost/admin` (if you use the default docker ip)
 
+### Optional
+
+Update your `STATICFILES_DIRS`, `STATIC_ROOT`, `STATIC_URL`, `MEDIA_ROOT`, `MEDIA_URL` variables.
+
 ## Custom Branding
 
 1. Create a new app called `dashboard` to hold your custom wagtail branding templates. This is done with `docker-compose run web django startapp dashboard`
