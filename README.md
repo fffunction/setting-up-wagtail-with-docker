@@ -3,8 +3,6 @@
 ## Prerequisites
 
 - [Docker for mac/Docker for windows](https://docs.docker.com/engine/installation/#/on-osx-and-windows)
-- or
-- [Docker Toolbox](https://www.docker.com/docker-toolbox)
 
 ## Getting Running
 
@@ -17,7 +15,7 @@
 7. Change the database settings in [projectname]/settings/base.py to use `dj_database_url` [Link to example config](#dj_database_url-config)
 8. `docker-compose run web ./manage.py migrate`
 9. `docker-compose run web ./manage.py createsuperuser`
-10. `docker-compose up` and your Wagtail admin will be running at `http://192.168.99.100/admin` (if you use the default docker ip)
+10. `docker-compose up` and your Wagtail admin will be running at `http://localhost/admin` (if you use the default docker ip)
 
 ## Custom Branding
 
