@@ -1,30 +1,26 @@
-# Core
-gunicorn==19.3.0
-Django>=1.8,<1.9
-wagtail==1.3
-django-overextends==0.4.0
-whitenoise==2.0.3
-wagtailgmaps==0.2.3
+# Updated: 2016-10-31
 
-## Database
-psycopg2==2.6.1
-dj-database-url==0.3.0
+# Core
+gunicorn==19.6.0
+Django==1.10.2
+whitenoise==3.2.2
+wagtail==1.7
+django-overextends==0.4.2
+wagtailmodeladmin==2.5.7
+
+## PostgreSQL
+psycopg2==2.6.2
+dj-database-url==0.4.1
 
 ## Search
-elasticsearch>=1.0.0,<2.0.0
+elasticsearch==5.0.0
 
 ## GIF image processing
-Wand==0.4.1
+Wand==0.4.4
 
-# User input sanitisation
-bleach==1.4.1
-
-# S3 storage
-boto==2.38.0
-django-storages-redux==1.3
-
-# Date handling
-python-dateutil==2.4.2 # for relativedelta
+# HTML sanitisation/cleaning
+bleach==1.4.3
 
 # Debug
-django-debug-toolbar==1.3.2
+django-debug-toolbar==1.6
+django-template-debug==0.3.5
